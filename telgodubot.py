@@ -33,6 +33,6 @@ class TelgoduListener(tweepy.StreamingClient):
 
 # Stream and retweet
 stream = TelgoduListener(bearer_token=BEARER_TOKEN)
-rule = tweepy.StreamRule("(#python OR #programming OR #cybersecurity OR #web3)")
+rule = tweepy.StreamRule("(#python OR #programming OR #cybersecurity OR #web3 OR #cryptocurrency)")
 stream.add_rules(rule)
 stream.filter(tweet_fields=["author_id"])
